@@ -1,9 +1,11 @@
-import Data from '../src/modules/data'
+import Data from '../src/modules/data';
 
-describe('It tests the data module', () =>{
+test('Sets a name inside a data object', () => {
+  Data.nameSetter('Christian');
+  expect(Data.data.user).toBe('Christian');
+});
 
-  it('fetchs data from the API', () => {
-
-  })
-
-})
+test('Sets a score inside a data object', () => {
+  Data.scoreSetter(765);
+  expect(Data.data.score).toBe(765);
+});

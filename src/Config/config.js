@@ -6,13 +6,13 @@ export default {
   height: 600,
   parent: 'container',
   dom: {
-        createContainer: true
-    },
+    createContainer: true,
+  },
   physics: {
     default: 'arcade',
     arcade: {
       gravity: { y: 300 },
-      debug: false
-    }
-  }
+      debug: false,
+    },
+  },
 };
