@@ -1,4 +1,4 @@
-// import Data from '../modules/data'
+import Data from '../modules/data'
 import config from '../Config/config'
 
 class InputScene extends Phaser.Scene {
@@ -46,7 +46,7 @@ class InputScene extends Phaser.Scene {
                 });
 
                 //  Populate the text with whatever they typed in as the username!
-                // Data.nameSetter(inputUsername.value)
+                Data.nameSetter(inputUsername.value)
 
                 self.scene.start('Game')
 

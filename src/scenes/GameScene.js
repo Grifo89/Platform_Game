@@ -1,6 +1,6 @@
 import 'phaser';
 import OptionsScene from './OptionsScene'
-// import Data from '../modules/data'
+import Data from '../modules/data'
 
 var platforms
 let player
@@ -159,9 +159,9 @@ function hitBomb (player, bomb)
 {
     let final = score
 
-    // Data.scoreSetter(final)
-    //
-    // Data.post()
+    Data.scoreSetter(final)
+
+    Data.post()
 
     this.physics.pause();
 
