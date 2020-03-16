@@ -9,7 +9,7 @@ module.exports = {
     },
 
     output: {
-        path: path.resolve(__dirname, 'build'),
+        // path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js'
     },
 
@@ -30,16 +30,16 @@ module.exports = {
     },
 
     plugins: [
-        new CopyPlugin([
-            {
-                from: path.resolve(__dirname, 'index.html'),
-                to: path.resolve(__dirname, 'build')
-            },
-            {
-                from: path.resolve(__dirname, 'assets', '**', '*'),
-                to: path.resolve(__dirname, 'build')
-            }
-        ]),
+        // new CopyPlugin([
+        //     {
+        //         from: path.resolve(__dirname, 'index.html'),
+        //         to: path.resolve(__dirname, 'build')
+        //     },
+        //     {
+        //         from: path.resolve(__dirname, 'assets', '**', '*'),
+        //         to: path.resolve(__dirname, 'build')
+        //     }
+        // ]),
         new webpack.DefinePlugin({
             'typeof CANVAS_RENDERER': JSON.stringify(true),
             'typeof WEBGL_RENDERER': JSON.stringify(true)
@@ -48,7 +48,7 @@ module.exports = {
     ],
 
     devServer: {
-        contentBase: path.resolve(__dirname, 'build'),
+        // contentBase: path.resolve(__dirname, 'build'),
         compress: true,
         port: 8000
     },
