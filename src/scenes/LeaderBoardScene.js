@@ -1,5 +1,5 @@
 import Data from '../modules/data'
-import Board from '../modules/scoreBoard'
+// import Board from '../modules/scoreBoard'
 import config from '../Config/config'
 
 export default class LeaderBoard extends Phaser.Scene {
@@ -30,6 +30,6 @@ export default class LeaderBoard extends Phaser.Scene {
         self.scene.start('Title')
       }
     })
-    Board.create()
+    // Board.create()
   }
 }
