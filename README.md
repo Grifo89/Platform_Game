@@ -1,6 +1,8 @@
 
 # Platform game using phaser 3 and an api provided by [@microverse](https://github.com/microverseinc/)
 
+![](game-gif.gif)
+
 > This is a 5 days project, part of Microverse, as a final solo project to apply all knowledge obtained during Javascript curriculum.
 
 ## Demo down below
