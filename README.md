@@ -1,5 +1,5 @@
 
-# Platform game using phaser 3 and an api provided by [@microverse](https://github.com/microverseinc/)
+# Platform game
 
 ![](game-gif.gif)
 
